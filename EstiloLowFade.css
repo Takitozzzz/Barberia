@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffd2d2;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.card .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000000;
+    background: linear-gradient(transparent 80%, #000), (var--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card .card_landing{
+    background-image: url(LowFade.jpg);
+}
+
+.card .card_landing h6 {
+    position:absolute;
+    bottom: 10px;
+    left: 150px;
+    font-size: 30px;
+    color: #D4EBFF;
+    font-family: 'Chela One', cursiva;
+}
+
+.card .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000000;
+    transition: .5s;
+}
+
+.card:hover .card_info {
+    left: 100%;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #000000; /*linea*/
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #24558E;
+    font-family: 'Tilt Prism', cursive;
+    letter-spacing:2px;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #12a1cc;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content {
+    margin-top: 15px;
+    font-family: 'Handlee', cursive;
+}
+
+.card_info .content .list {
+    padding: 10px 15px;
+}
+
+.card_info .content .list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #25252E;
+    display: block;
+    margin-top: 10px;
+    font-family: 'Titan One', cursive;
+}
